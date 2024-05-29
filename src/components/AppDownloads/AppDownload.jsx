@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets'
 
 function AppDownload() {
   return (
-    <div className='app-download' >
+    <div className='app-download' id='app-download'>
         <p>For Better Experienge Download <br />Tomato App</p>
 
         <div className="app-download-platform">
