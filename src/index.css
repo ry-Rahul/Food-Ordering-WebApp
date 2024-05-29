@@ -23,7 +23,7 @@ a {
 
 @keyframes leftToRight {
   0% {
-    margin-left: -1000px;
+    margin-top: -85%;
   }
   100% {
     margin-left: 0;
