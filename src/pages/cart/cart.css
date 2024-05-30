@@ -1,0 +1,133 @@
+.cart-box {
+  margin-top: 100px;
+}
+
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  color: gray;
+  font-size: max(1vw, 12px);
+}
+
+.cart-items-item {
+  margin: 10px 0;
+  color: black;
+}
+
+.cart-items-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.cart-box hr {
+  height: 1px;
+  background-color: #e2e2e2;
+  border: none;
+}
+
+.cross {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.cart-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  gap: max(12vw, 20px);
+}
+
+
+.cart-total{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.cart-total hr{
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+    margin: 10px 0;
+}
+
+.cart-total button{
+    padding: 10px;
+    width: 40%;
+    border: none;
+    border-radius: 5px;
+    background-color: #49557e;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.cart-promocode{
+    flex:1;
+
+}
+
+.cart-promocode P{
+    color: #555;
+}
+
+.cart-promocode input{
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+}
+ 
+.cart-promocode button{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #49557e;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    width: 40%;
+}
+
+@media (max-width:750px){
+    .cart-bottom{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .cart-promocode{
+        justify-content: start;
+    }
+
+    .cart-total button{
+
+        font-size: 12px;
+    }
+
+    .cart-total{
+        margin-top: 50px;
+    }
+
+    .cart-items-item img {
+        width: 50px;
+        height: 50px;
+      }
+
+}
